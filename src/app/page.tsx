@@ -1,9 +1,9 @@
-import { FileText, Code, Zap, CheckCircle, ArrowRight} from "lucide-react";
+import { FileText, Code, Zap, CheckCircle} from "lucide-react";
 import LandingCard from "./components/ui/landingCard";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-screen text-white px-8">
+    <div className="flex flex-col items-center justify-center min-h-screen w-screen text-white px-8">
       <h1 className="text-6xl font-semibold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">
         Convert, Validate, and
       </h1>
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
         <div className="flex items-center text-green-400">
           <CheckCircle className="w-5 h-5 mr-2" />
-          <span>Privacy Focused</span>
+          <span>API Accessible</span>
         </div>
       </div>
 
