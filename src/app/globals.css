@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --breakpoint-tablet: 48rem;     /* 768px */
+  --breakpoint-laptop: 64rem;     /* 1024px */
+  --breakpoint-laptopM: 80rem;    /* 1280px */
+  --breakpoint-surface: 96rem;    /* 1536px */
+  --breakpoint-fullhd: 120rem;    /* 1920px */
+  --breakpoint-qhd: 160rem;       /* 2560px */
+  --breakpoint-ultrawide: 215rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
