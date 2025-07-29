@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth min-h-screen w-full bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth min-h-screen w-full bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 overflow-x-hidden pt-32 laptopM:pt-0`}
       >
         <Navbar></Navbar>
         {children}

@@ -28,5 +28,5 @@ body {
 }
 
 .group-button:hover .bounce-x-on-hover {
-  animation: bounce-x 1.5s infinite;
+  animation: bounce-x 1.3s infinite;
 }
