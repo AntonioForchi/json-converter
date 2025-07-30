@@ -1,5 +1,5 @@
 import { FileText, Code, Zap, CheckCircle} from "lucide-react";
-import LandingCard from "./components/ui/landingCard";
+import LandingCard from "@/app/components/landingCard";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <h1 className="text-4xl text-center tablet:text-5xl laptopM:text-6xl font-semibold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">
         Generate JSON easily
       </h1>
-      <div className="mt-8 font-medium text-lg tablet:text-xl laptopM:text-2xl w-5xs tablet:w-xl laptopM:w-3xl text-center">
+      <div className="mt-8 text-gray-400 font-medium text-lg tablet:text-xl laptopM:text-2xl w-5xs tablet:w-xl laptopM:w-3xl text-center">
         <h2>Streamline your JSON workflow with our powerful suite of tools.</h2>
         <h2>
           Perfect for developers, data professionals, and anyone working with
