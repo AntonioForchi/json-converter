@@ -4,7 +4,7 @@ import { FileText, CircleCheckBig, Upload } from "lucide-react";
 const CsvToJson = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen w-screen text-white px-8">
+      <div className="flex flex-col items-center justify-center min-h-screen w-screen text-white px-8 mb-4">
         <h1 className="text-4xl text-center tablet:text-5xl laptopM:text-6xl font-semibold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">
           CSV to JSON Converter
         </h1>
@@ -12,7 +12,7 @@ const CsvToJson = () => {
           Convert your CSV data to JSON format with ease
         </h2>
 
-        <div className="grid grid-cols-2 gap-8 mt-12 min-w-7xl">
+        <div className="grid grid-cols-1 laptop:grid-cols-2 gap-8 mt-12 w-full max-w-7xl">
           <div className="w-full h-full bg-white/1 backdrop-blur-xl border transition duration-300 border-white/10 py-4 px-8 rounded-xl shadow-lg shadow-black/60 flex flex-col gap-2">
             <div className="flex items-center gap-2">
               <FileText className="w-5 h-5 text-white" />
