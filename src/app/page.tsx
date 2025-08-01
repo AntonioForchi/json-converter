@@ -1,5 +1,5 @@
 import { FileText, Code, Zap, CheckCircle} from "lucide-react";
-import LandingCard from "@/app/components/landingCard";
+import LandingCard from "@/components/landingCard";
 
 export default function Home() {
   return (
