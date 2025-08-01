@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight} from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import Link from "next/link";
 
 interface LandingCardProps {
     title: string;
@@ -20,9 +21,9 @@ const LandingCard: React.FC<LandingCardProps> = ({title, description, icon: Icon
         <p className="text-gray-400 text-sm mb-4">
             {description}
         </p>
-        <button className="w-full bg-gradient-to-l from-purple-600 via-pink-400 to-purple-600 rounded-lg p-2 flex gap-2 items-center justify-center font-semibold group-button shadow-black/60 shadow-lg hover:shadow-xl">
+        <Link href={buttonRoute} className="w-full bg-gradient-to-l from-purple-600 via-pink-400 to-purple-600 rounded-lg p-2 flex gap-2 items-center justify-center font-semibold group-button shadow-black/60 shadow-lg hover:shadow-xl">
           Get Started <ArrowRight className="w-5 h-5 bounce-x-on-hover "></ArrowRight>
-        </button>
+        </Link>
       </div>
     </>
   );

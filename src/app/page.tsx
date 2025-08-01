@@ -1,6 +1,28 @@
 import { FileText, Code, Zap, CheckCircle} from "lucide-react";
 import LandingCard from "@/components/landingCard";
 
+const landingCards = [
+  {
+    title: "CSV to JSON",
+    description: "Convert your CSV files to JSON format instantly with our intelligent parser",
+    icon: FileText,
+    buttonRoute: "/csv-to-json"
+  },
+  {
+    title: "JSON Validator",
+    description: "Validate and format your JSON with detailed error reporting and suggestions",
+    icon: Code,
+    buttonRoute: "/json-validator"
+  },
+  {
+    title: "AI JSON Generator",
+    description: "Generate complex JSON structures using natural language prompts powered by AI",
+    icon: Zap,
+    buttonRoute: "/ai-json-generator"
+  }
+];
+
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen w-screen text-white px-8">
@@ -34,9 +56,15 @@ export default function Home() {
       </div>
 
       <div className="grid grid-cols-1 laptop:grid-cols-3 gap-8 items-center justify-center mb-12 laptop:mb-0 max-w-7xl mt-8 text-center">
-        <LandingCard title="CSV to JSON" description="Convert your CSV files to JSON format instantly with our intelligent parser" icon={FileText} buttonRoute=""></LandingCard>
-        <LandingCard title="JSON Validator" description="Validate and format your JSON with detailed error reporting and suggestions" icon={Code} buttonRoute=""></LandingCard>
-        <LandingCard title="AI JSON Generator" description="Generate complex JSON structures using natural language prompts powered by AI" icon={Zap} buttonRoute=""></LandingCard>
+        {landingCards.map((card, index) => (
+          <LandingCard
+            key={index}
+            title={card.title}
+            description={card.description}
+            icon={card.icon}
+            buttonRoute={card.buttonRoute}
+          />
+        ))} 
       </div>
     </div>
   );
