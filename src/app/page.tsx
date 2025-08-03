@@ -49,7 +49,7 @@ export default function Home() {
           <CheckCircle className="w-5 h-5 mr-2" />
           <span>No Registration Required</span>
         </div>
-        <div className="flex items-center text-green-400">
+        <div className="flex items-center text-green-400 hidden">
           <CheckCircle className="w-5 h-5 mr-2" />
           <span>API Accessible</span>
         </div>

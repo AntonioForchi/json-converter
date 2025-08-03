@@ -139,6 +139,7 @@ const JsonValidator = () => {
                 <textarea
                   name=""
                   id=""
+                  readOnly
                   value={formattedJson}
                   className="bg-white/3 backdrop-blur-xl border border-white/10 py-2 px-4 rounded-xl max-h-82 h-82 w-full"
                 ></textarea>

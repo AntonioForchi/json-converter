@@ -62,7 +62,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link href="/api-docs" className="hover:text-purple-400">
+            <Link href="/api-docs" className="hover:text-purple-400 hidden">
               Api Docs
             </Link>
           </li>
@@ -114,7 +114,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/api-docs"
-            className="text-white hover:text-pink-500 transition"
+            className="text-white hover:text-pink-500 transition hidden"
             onClick={() => setIsMenuOpen(false)}
           >
             API Docs
